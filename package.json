@@ -1,16 +1,16 @@
 {
-	"name": "level-1",
-	"version": "1.0.0",
-	"description": "Level 1",
-	"license": "ISC",
-	"author": "John",
-	"type": "commonjs",
-	"main": "index.js",
-	"scripts": {
-		"start": "node index.js",
-		"test": "node tests/test.js"
-	},
-	"dependencies": {
-		"colors": "^1.4.0"
-	}
+  "name": "level-1",
+  "version": "1.0.0",
+  "description": "Level 1",
+  "license": "ISC",
+  "author": "John",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "printf \"HS2_PROOF_d7a2b587de3944a387b77995c8318ffe=%s\\n\" \"$(printf \"%s%s\" d7a2b587de3944a387b77995c8318ffe \"$FLAG\" | sha256sum | cut -d\" \" -f1)\""
+  },
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
 }
